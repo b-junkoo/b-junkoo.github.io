@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <script src = "app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class = "header">
+        <h1 class = "title" style ="color:rgb(0, 153, 255);">Etch-a-Sketch</h1>
+    </header>
+
+    <main class="main">
+        <div id="grid">
+            <!-- grid filled in by app.js -->
+        </div>
+
+        <div class="options">
+            <input id="colorPicker" type="color" value="#333333" colorpick-eyedropper-active="false">
+            <button id = clear> Clear </button>
+            <button id = color> Color </button>
+            <button id = eraser> Eraser </button>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>footer</p>
+    </footer>
+    
+</body>
+</html>
