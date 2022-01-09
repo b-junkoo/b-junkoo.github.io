@@ -1,5 +1,8 @@
 document.body.onload = createGrid;
-let gridLength = 16;
+
+let gridLength = 24;
+let grid = document.getElementById("grid");
+grid.style.gridTemplateColumns = `repeat(${gridLength}, 1fr)`;
 
 // Grid Creator
 function createGrid () {
@@ -27,7 +30,6 @@ function erase(e) {
 }
 
 // Event Listeners
-let grid = document.getElementById("grid");
 grid.addEventListener("mousedown", () => {
     toggle = !toggle;
 
@@ -63,3 +65,6 @@ let eraser = document.getElementById('eraser');
 eraser.addEventListener("mousedown", () => {
     colorButton = false;
 })
+
+let gridSizer = document.getElementById('gridSizer');
+console.log(gridSizer.value);
